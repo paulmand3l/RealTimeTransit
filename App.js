@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Provider } from 'react-redux';
 import { init } from '@rematch/core';
-import { models, Root } from './src/components';
+import { models, Root } from './src/modules';
 
 const store = init({ models });
 

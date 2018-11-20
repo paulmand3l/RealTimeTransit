@@ -308,6 +308,10 @@ const agencyList = {
 export default agencyList;
 export const agenciesByRegion = _.groupBy(agencyList.agency, 'regionTitle');
 
+for (region in agenciesByRegion) {
+  agenciesByRegion[region].sort(agency => agency.title)
+}
+
 let regions = Object.keys(agenciesByRegion).sort();
 
 if (regions.indexOf('Other') > -1) {

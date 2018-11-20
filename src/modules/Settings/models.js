@@ -1,7 +1,7 @@
-export const regionTitle = {
+export const region = {
   state: "California-Northern",
   reducers: {
-    setRegionTitle(state, payload) {
+    set(state, payload) {
       return payload;
     }
   }
